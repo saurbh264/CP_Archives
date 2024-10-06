@@ -1,13 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-
 void mainCode(){
-    ll n=0,k;
-    cin >> n >> k;
-    vector<ll> v(n);
-    for(ll i=0;i<n;i++) cin >> v[i];
-
+    int n=0,a=0,b=0;
+    cin >> n >> a >> b;
+    int mini = min(a,b);
+    int result = ceil((double)n / mini);
+    cout << result << endl;
     return;
 }
 
